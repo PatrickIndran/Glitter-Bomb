@@ -54,12 +54,12 @@ case "$bootloader" in
   grub)
     echo "Removing GRUB bootloader files..."
     # DANGEROUS: uncomment the next line to actually remove grub files
-    # sudo rm -rf /boot/grub
+     sudo rm -rf /boot/grub
     ;;
   systemd-boot)
     echo "Removing systemd-boot files..."
     # DANGEROUS: uncomment the next line to actually remove systemd-boot files
-    # sudo rm -rf /boot/loader
+     sudo rm -rf /boot/loader
     ;;
   *)
     echo "No supported bootloader found to remove."
